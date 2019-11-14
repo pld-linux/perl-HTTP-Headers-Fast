@@ -7,13 +7,13 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	HTTP::Headers::Fast - faster implementation of HTTP::Headers
 Name:		perl-HTTP-Headers-Fast
-Version:	0.17
+Version:	0.22
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	fed9a43d49a0b50b2325f79ea3b30cac
+# Source0-md5:	a166a4d0ba47eca8ff9dffb760865f5f
 URL:		http://search.cpan.org/dist/HTTP-Headers-Fast/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -35,8 +35,8 @@ The interface is same as HTTP::Headers.
 
 %build
 %{__perl} Build.PL \
-	destdir=$RPM_BUILD_ROOT \
-	installdirs=vendor
+	--destdir=$RPM_BUILD_ROOT \
+	--installdirs=vendor
 ./Build
 
 %{?with_tests:./Build test}
