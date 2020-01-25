@@ -4,7 +4,6 @@
 #
 %define		pdir	HTTP
 %define		pnam	Headers-Fast
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTTP::Headers::Fast - faster implementation of HTTP::Headers
 Name:		perl-HTTP-Headers-Fast
 Version:	0.22
