@@ -7,7 +7,7 @@
 Summary:	HTTP::Headers::Fast - faster implementation of HTTP::Headers
 Name:		perl-HTTP-Headers-Fast
 Version:	0.22
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
